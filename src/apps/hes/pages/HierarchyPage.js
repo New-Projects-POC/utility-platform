@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ri } from '../../../shared/utils/mockData';
 
 const HIERARCHY = {
   root: {

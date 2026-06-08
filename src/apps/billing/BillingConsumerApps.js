@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+
 import Topbar from '../../shared/components/Topbar';
 import Footer from '../../shared/components/Footer';
 

@@ -643,7 +643,7 @@ export default function LoginPage() {
 
           {/* Footer */}
           <div style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: 10, color: 'rgba(255,255,255,0.2)' }}>
-            © 2026 Utility Management Platform · v1.0.0
+            © 2025 Utility Management Platform · v2.1.0
           </div>
         </div>
       </div>

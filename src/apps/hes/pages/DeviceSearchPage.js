@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { METERS, fmtDT, rf, ri, ODR_COMMANDS } from '../../../shared/utils/mockData';
 
