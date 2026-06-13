@@ -37,3 +37,5 @@ coverage/
 # temporary files
 *.tmp
 *.temp
+*.zip
+*.tar.gz
