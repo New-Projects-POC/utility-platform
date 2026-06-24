@@ -151,6 +151,7 @@ function SvgHBar({ data, labels, colors, height = 135 }) {
 }
 
 // ─── Meter Type Image Card ─────────────────────────────────────────────────────
+// eslint-disable-next-line no-unused-vars
 function MeterTypeCard({ type, count, pct, color }) {
   const [imgError, setImgError] = useState(false);
   return (

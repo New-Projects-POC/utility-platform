@@ -12,7 +12,6 @@ function SvgLineChart({ datasets, labels, height = 120, yMin, yMax, yFmt, xLimit
   const toY = v => padT + H - ((v - minV) / (maxV - minV)) * H;
   const fmt = yFmt || (v => v >= 1000 ? `${(v / 1000).toFixed(0)}K` : Math.round(v));
   const ticks = [0, 0.25, 0.5, 0.75, 1].map(p => minV + p * (maxV - minV));
-  // eslint-disable-next-line no-unused-vars
   const shownLabels = xLimit ? labels.filter((_, i) => i % Math.ceil(labels.length / xLimit) === 0 || i === labels.length - 1) : labels;
 
   const makePath = values =>
@@ -184,7 +183,6 @@ function SvgDonut({ data, centerValue, centerLabel, size = 100 }) {
 // Half-gauge for AT&C loss
 function HalfGauge({ value, target, max = 20, size = 130 }) {
   const cx = size / 2, cy = size * 0.62, r = size * 0.42;
-  // eslint-disable-next-line no-unused-vars
   const sweep = Math.PI; // 180°
   const toAngle = v => Math.PI + (v / max) * Math.PI;
   const polar = (angle, radius) => ({
@@ -330,11 +328,8 @@ function rndPts(n, xRange, yRange) {
 
 // ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function Dashboard() {
-  // eslint-disable-next-line no-unused-vars
   const [period, setPeriod] = useState('This Month');
-  // eslint-disable-next-line no-unused-vars
   const [feeder, setFeeder] = useState('All Feeders');
-  // eslint-disable-next-line no-unused-vars
   const [zone, setZone] = useState('All Circles');
 
   const days15 = Array.from({ length: 15 }, (_, i) => `${i + 1} May`);
