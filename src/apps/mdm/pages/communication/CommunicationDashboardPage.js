@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
-import { METERS, fmtDT, ri } from '../../../../shared/utils/mockData';
+import { METERS, fmtDT } from '../../../../shared/utils/mockData';
 
 // ─── Extended meter data for communication page ────────────────────────────────
 const COMM_STATUS_MAP = {
