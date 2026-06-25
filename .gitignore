@@ -39,3 +39,9 @@ coverage/
 *.temp
 *.zip
 *.tar.gz
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
