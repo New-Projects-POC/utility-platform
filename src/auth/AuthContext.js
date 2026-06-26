@@ -3,7 +3,7 @@ import { authApi, TokenStore } from '../shared/utils/api';
 
 export const SERVICE_META = {
   hes:      { key:'hes',      label:'Head End System',       short:'HES',  icon:'ti-antenna',      color:'#1a6bff', bg:'#eff6ff', description:'Meter communication, data acquisition & device management', path:'/hes',      status:'active'      },
-  mdm:      { key:'mdm',      label:'Meter Data Management', short:'MDM',  icon:'ti-database',     color:'#7c3aed', bg:'#faf5ff', description:'Meter data validation, estimation & aggregation',          path:'/mdm',      status:'coming_soon' },
+  mdm:      { key:'mdm',      label:'Meter Data Management', short:'MDM',  icon:'ti-database',     color:'#7c3aed', bg:'#faf5ff', description:'Meter data validation, estimation & aggregation',          path:'/mdm',      status:'active' },
   wfm:      { key:'wfm',      label:'Workforce Management',  short:'WFM',  icon:'ti-users',        color:'#0d9488', bg:'#f0fdfa', description:'Field workforce scheduling, dispatch & tracking',           path:'/wfm',      status:'coming_soon' },
   billing:  { key:'billing',  label:'Billing System',        short:'BILL', icon:'ti-file-invoice', color:'#d97706', bg:'#fffbeb', description:'Revenue management, billing cycles & payments',             path:'/billing',  status:'coming_soon' },
   consumer: { key:'consumer', label:'Consumer Portal',       short:'CP',   icon:'ti-user-circle',  color:'#16a34a', bg:'#f0fdf4', description:'Consumer self-service, usage & complaints',                path:'/consumer', status:'coming_soon' },
@@ -21,7 +21,7 @@ export const HES_FEATURE_MAP = {
 export const MDM_FEATURE_MAP = {
   METER_DATA:['meter-data'], LOAD_PROFILE:['meter-data'],
   DATA_VALIDATION:['vee'], DATA_ESTIMATION:['vee'], DATA_EDITING:['vee'], VEE_MANAGEMENT:['vee'],
-  AGGREGATION:['energy-audit','demand-service'], EVENT_STORAGE:['exceptions'], BILLING_DATA:['revenue'],
+  AGGREGATION:['energy-audit','demand-service'], EVENT_STORAGE:['exceptions'], BILLING_DATA:['revenue'], SLA:['sla'],
 };
 
 function buildServices(moduleAccess = []) {

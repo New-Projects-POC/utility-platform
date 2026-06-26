@@ -58,6 +58,10 @@ const NAV = [
     id: 'vee', label: 'VEE Mgmt', icon: 'ti-sitemap', path: '/mdm/vee/dashboard', featureId: 'VEE_MANAGEMENT',
     children: [{ id: 'vee-dashboard', label: 'VEE Mgmt Dashboard', path: '/mdm/vee/dashboard' }],
   },
+    {
+    id: 'sla', label: 'SLA Mgmt', icon: 'ti-sitemap', path: '/mdm/sla/dashboard', featureId: 'SLA',
+    children: [{ id: 'sla-dashboard', label: 'SLA Mgmt Dashboard', path: '/mdm/sla/dashboard' }],
+  },
   {
     id: 'energy-audit', label: 'Energy Audit', icon: 'ti-file-analytics', path: '/mdm/energy-audit/dashboard', featureId: 'AGGREGATION',
     children: [{ id: 'ea-dashboard', label: 'Energy Audit Dashboard', path: '/mdm/energy-audit/dashboard' }],
